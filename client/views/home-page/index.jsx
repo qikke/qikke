@@ -27,15 +27,17 @@ export default class HomePage extends React.Component {
       normal: `${styles.navTop} ${styles.normal}`,
       hidden: `${styles.navTop} ${styles.unpinned}`,
     }
+    let topBarClass
     if (scrollTop > window.scrollY) {
       if (window.scrollY !== 0) {
-        this.setState({ topBarClass: topBarState.normal })
+        topBarClass = topBarState.normal
       } else {
-        this.setState({ topBarClass: topBarState.init })
+        topBarClass = topBarState.init
       }
     } else if (scrollTop < window.scrollY) {
-      this.setState({ topBarClass: topBarState.hidden })
+      topBarClass = topBarState.hidden
     }
+    this.setState({ topBarClass })
     this.setState({ scrollTop: window.scrollY })
   }
 
