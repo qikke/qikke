@@ -51,45 +51,8 @@ if (isDev) {
     historyApiFallback: {
       index: '/public/index.html'
     }
-    // proxy: {
-    //   '**': {
-    //     target: 'http://localhost:8099',
-    //     secure: false,
-    //     changeOrigin: true
-    //   }
-    // }
   }
   config.plugins.push(new webpack.HotModuleReplacementPlugin())
-} else {
-  config.entry = {
-    app: join(__dirname, '../client/app.js'),
-    vendor: [
-      'react',
-      'react-dom',
-      'react-router-dom',
-      'mobx',
-      'mobx-react',
-      'axios'
-      // 'query-string',
-      // 'dateformat',
-      // 'marked'
-    ]
-  }
-  config.output.filename = '[name].[chunkhash].js'
-  // config.plugins.push(
-  //   new webpack.optimize.CommonsChunkPlugin({
-  //     name: 'vendor'
-  //   }),
-  //   new webpack.optimize.CommonsChunkPlugin({
-  //     name: 'manifest',
-  //     minChunks: Infinity
-  //   })
-  // )
-  config.optimization = {
-    minimizer: [
-      new UglifyJsPlugin()
-    ]
-  }
 }
 
 module.exports = config

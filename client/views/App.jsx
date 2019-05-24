@@ -1,16 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Routes from '../config/router'
+import 'normalize.css/normalize.css'
+import '../styles/index.scss'
 
 export default class App extends React.Component {
+  componentDidMount() { }
+
   render() {
-    return [
-      <div key="banner">
-        <Link to="/">首页</Link>
-        <br />
-        <Link to="/detail">detail</Link>
-      </div>,
-      <Routes key="router" />,
-    ]
+    return (
+      <Routes key="router" />
+    )
   }
 }

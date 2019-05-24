@@ -1,11 +1,12 @@
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 
-import TopicList from '../views/topic-list/index'
-import TopicDetail from '../views/topic-detail/index'
+import HomePage from '../views/home-page/index'
+// import TopicList from '../views/topic-list/index'
+// import TopicDetail from '../views/topic-detail/index'
 
 export default () => [
-  <Route path="/" render={() => <Redirect to="/list" />} exact key="home" />,
-  <Route path="/list" component={TopicList} key="list" />,
-  <Route path="/detail" component={TopicDetail} key="detail" />,
+  <Route path="/" component={HomePage} exact key="home" />,
+  // <Route path="/list" component={TopicList} key="list" />,
+  // <Route path="/detail" component={TopicDetail} key="detail" />,
 ]
