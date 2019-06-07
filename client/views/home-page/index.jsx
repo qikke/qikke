@@ -3,8 +3,8 @@ import styles from './index.module.scss'
 import headImg from '../../assets/img/head.png'
 
 export default class HomePage extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       scrollTop: 0,
       topBarClass: styles.navTop,
