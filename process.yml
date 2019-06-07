@@ -2,5 +2,5 @@ apps:
   - script: ./server/server.js
     name: qikke
     env_production:
-      HODE_ENV: production
+      NODE_ENV: production
       HOST: localhost
