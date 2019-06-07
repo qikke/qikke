@@ -1,0 +1,81 @@
+.index-module__homeWrap___3zYPh .index-module__headerImg___1cCLh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url(/public/images/headerBac_8dcbdbd.jpg) no-repeat center; }
+  .index-module__homeWrap___3zYPh .index-module__headerImg___1cCLh h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.5em; }
+  .index-module__homeWrap___3zYPh .index-module__headerImg___1cCLh .index-module__description___2HFr5 {
+    text-align: center;
+    color: #363636;
+    font-size: 0.8em; }
+
+.index-module__homeWrap___3zYPh .index-module__navTop___2pX0E {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  padding: 28px 0;
+  top: 0;
+  transition: all .8s;
+  transition-property: all;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+  transition-delay: 0s; }
+  .index-module__homeWrap___3zYPh .index-module__navTop___2pX0E.index-module__unpinned___16WGH {
+    top: -200px;
+    background: #fff;
+    opacity: 0.1; }
+  .index-module__homeWrap___3zYPh .index-module__navTop___2pX0E.index-module__normal___1B1kc {
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(6, 8, 8, 0.1);
+    opacity: .97; }
+  .index-module__homeWrap___3zYPh .index-module__navTop___2pX0E .index-module__container___1oiy4 {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; }
+    .index-module__homeWrap___3zYPh .index-module__navTop___2pX0E .index-module__container___1oiy4 img {
+      border-radius: 50%; }
+    .index-module__homeWrap___3zYPh .index-module__navTop___2pX0E .index-module__container___1oiy4 .index-module__navList___14fPb {
+      display: flex;
+      align-items: center;
+      font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; }
+
+.index-module__homeWrap___3zYPh .index-module__homeContent___p35wq {
+  position: relative;
+  margin-top: 100vh;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
+  z-index: 2; }
+
+#root {
+  font-family: 'Raleway', sans-serif; }
+  #root .rel {
+    position: relative; }
+  #root .dfac {
+    display: flex;
+    align-items: center; }
+  #root .dfc {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #root .fl {
+    float: left; }
+  #root .fr {
+    float: right; }
+  #root .hand {
+    cursor: pointer; }
+
