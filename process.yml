@@ -1,6 +1,6 @@
 apps:
   - script: ./server/server.js
-    name: jnode
+    name: qikke
     env_production:
       HODE_ENV: production
       HOST: localhost

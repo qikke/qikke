@@ -2,7 +2,7 @@ const express = require('express')
 const favicon = require('serve-favicon')
 const bodyParser = require('body-parser')
 const session = require('express-session')
-const serverRender = require('./util/server-render')
+// const serverRender = require('./util/server-render')
 const fs = require('fs')
 const { join } = require('path')
 
@@ -26,11 +26,13 @@ app.use('/api/user', require('./util/handle-login'))
 app.use('/api', require('./util/proxy'))
 
 if (!isDev) {
-  const serverEntry = require('../dist/server-entry')
-  const template = fs.readFileSync(join(__dirname, '../dist/server.ejs'), 'utf8')
+  // const serverEntry = require('../dist/server-entry')
+  // const template = fs.readFileSync(join(__dirname, '../dist/server.ejs'), 'utf8')
   app.use('/public', express.static(join(__dirname, '../dist')))
+  const html = fs.readFileSync(join(__dirname, '../dist/index.html'), 'utf8')
   app.get('*', function (req, res, next) {
-    serverRender(serverEntry, template, req, res).catch(next)
+    // serverRender(serverEntry, template, req, res).catch(next)
+    res.send(html)
   })
 } else {
   const devStatic = require('./util/dev-static')
