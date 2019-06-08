@@ -16,7 +16,10 @@
       "repo": "git@github.com:qikke/qikke.git",
       "ref": "origin/master",
       "path": "/home/qk/deploy/qikke",
-      "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy": "npm install && npm run build && pm2 startOrRestart ecosystem.json --env production",
+      "env": {
+        "NODE_ENV": "production"
+      }
     }
   }
 }
