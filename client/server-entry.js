@@ -6,7 +6,7 @@ import { Provider, useStaticRendering } from 'mobx-react'
 import { JssProvider } from 'react-jss'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 
-import App from './views/App'
+import App from './containers/App'
 import { createStoreMap } from './store/store'
 
 // const staticRouter = require('react-router-dom').StaticRouter

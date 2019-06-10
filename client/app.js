@@ -7,7 +7,7 @@ import { AppContainer } from 'react-hot-loader' // eslint-disable-line
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { lightBlue, pink } from '@material-ui/core/colors'
 
-import App from './views/App'
+import App from './containers/App'
 
 import AppState from './store/app-state'
 
@@ -57,8 +57,8 @@ const render = (Component) => {
 render(createApp(App))
 
 if (module.hot) {
-  module.hot.accept('./views/App.jsx', () => {
-    const NextApp = require('./views/App.jsx').default // eslint-disable-line
+  module.hot.accept('./containers/App.jsx', () => {
+    const NextApp = require('./containers/App.jsx').default // eslint-disable-line
     render(createApp(NextApp))
   })
 }

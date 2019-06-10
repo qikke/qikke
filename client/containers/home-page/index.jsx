@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './index.module.scss'
 import headImg from '../../assets/img/head.png'
+import { Link } from 'react-router-dom'
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -49,7 +50,7 @@ export default class HomePage extends React.Component {
           <div className={styles.container}>
             <img src={headImg} alt="header" width="72" height="72" />
             <div className={styles.navList}>
-              <span className="hand">notes</span>
+              <Link to='/notes'><span className="hand">notes</span></Link>
             </div>
           </div>
         </header>
